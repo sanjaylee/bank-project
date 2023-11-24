@@ -1,0 +1,140 @@
+
+* {
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+  font-family:'poppins', sans-serif;
+
+}
+body{
+background-image: url(bg3.jpg);
+background-size: 100% 619px;
+background-repeat: no-repeat;
+color: #fff;
+}
+.header {
+  position: fixed; 
+ 
+width: 100%;
+margin-left: 40%;
+
+padding: 30px 10%;
+
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+ 
+}
+.navbar a {
+  text-shadow:0px 6px 7px #f06, 0 0 9px blue;;
+  display: inline-block;
+font-size: 20px;
+ color: aliceblue;
+  text-decoration: none;  
+font-weight: 600px;
+  margin-left: 35px;
+opacity: 0;
+  animation: slideTop .5s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+  
+}
+ul.dropdown li {
+  display: block;
+
+}
+ul.dropdown li {
+  display: block;
+
+}
+ul.dropdown {
+width: 100%;
+background: #3cf;
+position: absolute;
+z-index: 999;
+display: none;
+}
+ul li a:hover {
+  background: #3cf;
+
+}ul li:hover ul.dropdown {
+display: block;
+}
+/* .navbar a.active, */
+.navbar a:hover{
+  background: linear-gradient(45deg,#f06,#3cf);
+  -webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+  
+ 
+ 
+}
+@keyframes slideTop{
+  0%{
+      opacity: 0;
+      transform: translateY(290px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.h1{
+
+  padding-left: 30px;
+  padding-top: 70px;
+ font-size: 20px;
+ position: absolute;
+
+ color:greenyellow;
+  /* box-shadow:  0 0 5px purple,
+ 0 0 50px purple;
+ background-color:black;  */
+ text-shadow: 0 0 5px yellow, 0 0 17px cyan;
+ animation: slideTop .5s ease forwards;
+
+
+}
+ .submit-button{
+  position: absolute;
+  display: flex;
+  color: white;
+  margin-left: 100px;
+  margin-top: 350px;
+  border: 1px solid rgb(245, 241, 27);
+  background:red;
+  padding: 10px;
+
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow:  0 0 5px white,
+  0 0 50px white;
+  animation: slidedo .5s ease forwards;
+
+ }
+ .submit-button:hover{
+  background: white;
+  color: blue;
+  box-shadow:0 0 5px cyan, 0 0 25px cyan,0 0 100px cyan,0 0 200px cyan;
+ }
+ 
+ .icon{
+  position: absolute;
+  font-size: 100px;
+  color:cyan;
+  margin-top: 230px;
+  margin-left: 130px;
+  animation: slidedo .5s ease forwards;
+  
+ }
+ @keyframes slidedo {
+  0%{
+      opacity: 0;
+      transform: translateX(400px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
